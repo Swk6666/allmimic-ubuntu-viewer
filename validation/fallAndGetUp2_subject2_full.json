@@ -1,0 +1,11 @@
+{
+  "clip": "fallAndGetUp2_subject2.csv",
+  "policy_iteration": 18000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 8194,
+  "total_steps": 8194,
+  "simulated_seconds": 163.88,
+  "wall_seconds": 23.270013221539557,
+  "failed": false,
+  "completed_full_clip": true
+}

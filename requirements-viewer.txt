@@ -1,0 +1,4 @@
+mujoco==3.5.0
+numpy==2.4.6
+# setup.sh installs torch==2.14.1 from the official CUDA 13.0 wheel index separately.
+# Set TORCH_BACKEND=cpu to install CPU-only torch.

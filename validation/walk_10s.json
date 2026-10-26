@@ -1,0 +1,11 @@
+{
+  "clip": "walk1_subject1.csv",
+  "policy_iteration": 18000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 500,
+  "total_steps": 13064,
+  "simulated_seconds": 10.0,
+  "wall_seconds": 1.071925369091332,
+  "failed": false,
+  "completed_full_clip": false
+}

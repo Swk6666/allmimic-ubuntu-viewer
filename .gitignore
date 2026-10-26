@@ -1,0 +1,26 @@
+# Local Python/tool environments and downloaded dependencies
+.venv/
+runtime/
+dependencies/
+cache/
+tmp/
+config/
+share/
+state/
+
+# Python artifacts, editor files, temporary copies
+__pycache__/
+*.py[cod]
+*.bak
+*.log
+*.tmp
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+
+# Machine-specific reports, host paths and desktop automation
+LOCAL_TEST_RESULTS.txt
+validation/local-machine/

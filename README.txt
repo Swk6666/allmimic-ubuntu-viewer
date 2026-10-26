@@ -1,0 +1,87 @@
+AllMimic — Ubuntu CPU MuJoCo 播放包
+
+1. 解压后在 Ubuntu 桌面环境的终端运行：
+
+   cd allmimic-ubuntu-viewer
+   bash setup.sh
+   bash run.sh --loop
+
+默认同时打开 MuJoCo 播放窗口和「AllMimic · 动作选择」面板。面板包含
+全部 40 条动作，可搜索动作名、按类别筛选，并显示各动作时长。
+双击动作，或选中后点击「播放所选」，即可在同一个 MuJoCo 窗口切换。
+面板支持暂停/继续、从头重播、停止、循环开关和播放速度调整，并显示
+当前正在播放的动作和进度。关闭任意一个窗口都会退出整个播放器。
+
+首次安装需要联网。setup.sh 将 uv、Python 3.11、PyTorch 和 MuJoCo
+安装在本目录的 runtime/、.venv/ 中，缓存默认也在本目录；无需 Conda、
+单独安装 CUDA 工具包、mjlab 或管理员权限，也不会修改 shell 配置。Ubuntu 22.04/24.04 x86_64
+可按此流程安装；其他架构和系统版本未在本次验证中测试。
+本机安装按用户要求改用 GPU 版 PyTorch 2.14.1（CUDA 13.0）；优先使用
+dependencies/ 中从原 AutoDL 环境校验迁移的依赖包。CPU 版可指定
+TORCH_BACKEND=cpu bash setup.sh。可用 UV_CACHE_DIR 指定已有 uv 缓存。
+播放器的物理仿真和策略推理仍保留原包的 CPU FP32 路径。
+MuJoCo 窗口需要桌面显示和可用的 OpenGL 驱动。普通 SSH 终端不能直接
+打开本地桌面窗口，请在目标 Ubuntu 电脑的桌面终端运行。
+
+2. 查看和切换动作：
+
+   bash run.sh --list
+   bash run.sh --clip dance1_subject1.csv --loop
+   bash run.sh --clip fallAndGetUp2_subject2.csv --loop
+   bash run.sh --clip jumps1_subject2.csv --loop
+   bash run.sh --clip walk1_subject1.csv --speed 0.5 --loop
+
+空格：暂停/继续；R：从头重播；鼠标：旋转、移动、缩放视角；关闭窗口退出。
+不加 --loop 时，动作结束或触发失败判定后停在最后状态，仍可按 R 重播。
+
+只打开原来的 MuJoCo 窗口（不显示动作面板）：
+
+   bash run.sh --no-gui --clip walk1_subject1.csv --loop
+
+选择面板使用 Tkinter；gui_runtime/ 中保存本机中文字体支持模块及说明。
+无窗口检查和 --list 不启动 GUI。
+
+3. 无窗口检查（适用于服务器或排查安装问题）：
+
+   bash run.sh --headless --seconds 10
+   bash run.sh --headless --clip walk1_subject1.csv
+
+--seconds 限制的是仿真时间，省略时测试整条动作。输出 failed 表示是否
+触发原项目的失败条件；completed_full_clip 只有整条动作完成时才为 true。
+失败返回码为 2。播放速度不足时，可试 --threads 1 或 --speed 0.5。
+
+4. 模型与参考动作
+
+policy.pt 是第 18,000 次迭代的策略网络、归一化统计和配置（约 37 MB）。
+motions.npz 包含全部 40 条 LAFAN1 G1 参考动作（50 Hz）。机器人描述、
+碰撞体、驱动器及网格在 robot/ 中；robot_metadata.json 保存动作缩放、
+默认关节角、关节映射和仿真设置。
+
+该策略需要目标参考动作，不是仅给速度指令就能自主行走的控制器。脚本
+每 20 ms 将最近 10 帧观测和未来 10 帧参考送入策略，生成关节目标，
+由 MuJoCo 以 5 ms 步长进行真实物理仿真；不是直接播放参考关节动画。
+
+原训练和评估使用 GPU MuJoCo Warp；此包使用原生 CPU MuJoCo 和 FP32
+策略推理。两种物理后端存在数值差异，所以原 GPU 的成功率不能直接当作
+此 CPU 播放器的成功率。本机已验证步行、舞蹈、跌倒起身、跳跃四条完整
+动作均通过；原打包机器结果见 validation/。迁移后在当前 Ubuntu 电脑
+进行的完整动作、CUDA 和真实桌面交互测试结果见 validation/local-machine/。
+
+来源：Shimingyi/allmimic，commit cb334ff674b2f57248f33f8c21b7fb526fbdf8cc。
+训练检查点：runs/lafan1_target_100/ckpt_0018000.pt。
+该检查点原 GPU 评估完整动作两次均 40/40；短片段首测 896/896，复测
+895/896。用户要求停止训练时，最后完整保存的检查点为第 22,000 次。
+两次全动作和全短片段均 100% 的更严格停止条件尚未达到。
+
+5. 迁移与删除
+
+只需复制整个压缩包，在目标电脑解压并重新运行 setup.sh。
+不要复制原机器的 .venv；环境通常包含机器上的绝对路径。
+关闭播放进程后，删除整个 allmimic-ubuntu-viewer 目录即可删除本包创建的文件。
+安装后若移动了目录，删除本包的 .venv 子目录并重新运行 setup.sh。
+
+依赖说明：
+  MuJoCo Python viewer: https://mujoco.readthedocs.io/en/stable/python.html
+  uv 本地安装选项: https://docs.astral.sh/uv/reference/installer/
+源代码及机器人资产的原有声明保存在 LICENSE-upstream.txt、LICENSE-mjlab.txt。
+本包用于迁移用户自己的实验环境，未上传或公开发布。

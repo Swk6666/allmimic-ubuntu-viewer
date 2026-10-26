@@ -1,0 +1,11 @@
+{
+  "clip": "dance1_subject1.csv",
+  "policy_iteration": 18000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 6573,
+  "total_steps": 6573,
+  "simulated_seconds": 131.46,
+  "wall_seconds": 19.27969685010612,
+  "failed": false,
+  "completed_full_clip": true
+}

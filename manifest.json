@@ -1,0 +1,348 @@
+{
+  "format_version": 2,
+  "source_checkpoint": "runs/lafan1_target_100/ckpt_0018000.pt",
+  "policy_iteration": 18000,
+  "upstream_commit": "cb334ff674b2f57248f33f8c21b7fb526fbdf8cc",
+  "git_lfs_files": [
+    "policy.pt",
+    "motions.npz"
+  ],
+  "note": "Hashes refer to complete working-tree files after Git LFS download, not LFS pointers. This manifest describes the GitHub repository contents; the original export archive is unchanged.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 83,
+      "sha256": "87c07b5f72ac341f0eb42c040e0617c9512c4ec9f89a20790580d01d473f1b99"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 382,
+      "sha256": "f5e4bfc748e7d2c27a2ab3a8701c86d383a9ceed1e74af7271de6a7e7c37e273"
+    },
+    {
+      "path": "LICENSE-LAFAN1.txt",
+      "bytes": 13135,
+      "sha256": "e11244310739afea404794c9405967a13abdbe7e2492052e94d7c81fe27c8b66"
+    },
+    {
+      "path": "LICENSE-mjlab.txt",
+      "bytes": 11352,
+      "sha256": "8ca04d9dbbccd20f0f1842fb33e13949f9e57064b150dad36af8e7a751ca3321"
+    },
+    {
+      "path": "LICENSE-upstream.txt",
+      "bytes": 752,
+      "sha256": "4d6184a0a1b9687e3b80686764f1987044b1c23abbd1e271d43a4cfb88e191d0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5142,
+      "sha256": "11d7a1710652031b751331071c0344e76b0b8a48f7df8dfdcd301bd3e3c07a0e"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 4871,
+      "sha256": "af9b52c6cdd208a6871d308acaa3aa52bebfc0414b90158804b5731bdf60e1d2"
+    },
+    {
+      "path": "allmimic/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "allmimic/kinematics.py",
+      "bytes": 7886,
+      "sha256": "ed7613731378482679d71d291b359e6b530b35fd3e8815662b24ed4f4fd4f0b2"
+    },
+    {
+      "path": "allmimic/motion_lib.py",
+      "bytes": 6771,
+      "sha256": "b4c54108626ad297f585c7cbca6152f53f3df1224d7bd585fb123578c60e203a"
+    },
+    {
+      "path": "allmimic/networks.py",
+      "bytes": 8976,
+      "sha256": "3e2ed44d65e72345d60519d8bf752e005bb18478c171b662054979b56d5032f7"
+    },
+    {
+      "path": "allmimic/rotations.py",
+      "bytes": 8740,
+      "sha256": "99e608d08f837594cd4c012dd33807069791ad1866db38e85c89a34db3e16113"
+    },
+    {
+      "path": "allmimic/task.py",
+      "bytes": 18166,
+      "sha256": "6428991c4950d8d35cf0c6ff407e6706fa230afa98825627badf22b5e44f1568"
+    },
+    {
+      "path": "docs/motion-selector.png",
+      "bytes": 107898,
+      "sha256": "793e23aee0320ee2eb9782fa63a71ed9ba4c5c365402aaf9018bfaf15ae0418b"
+    },
+    {
+      "path": "gui_runtime/LICENSE_PYTHON.txt",
+      "bytes": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    {
+      "path": "gui_runtime/README.txt",
+      "bytes": 774,
+      "sha256": "85047a88b89515fd375034ba2b29abec31b483632982f3d00d8247c7e7508187"
+    },
+    {
+      "path": "gui_runtime/_tkinter.cpython-311-x86_64-linux-gnu.so",
+      "bytes": 223760,
+      "sha256": "493878abf79664040182d2c899fc051ba68c4c1eff56e686651ad80235dae514"
+    },
+    {
+      "path": "motion_gui.py",
+      "bytes": 14355,
+      "sha256": "84637577b57e5a4d7177241986c9b2cc2810563bf60e0a039e680fa38e48daa7"
+    },
+    {
+      "path": "motions.npz",
+      "bytes": 125284680,
+      "sha256": "75da9adfcef46c25990240563ff5587016e995ad83f322cd772f5a256866c365"
+    },
+    {
+      "path": "play.py",
+      "bytes": 13072,
+      "sha256": "107fc2b0fcf33a2cbb4a8731316dc5d662fc28018ccd1724ca20484dab58d2f4"
+    },
+    {
+      "path": "policy.pt",
+      "bytes": 36881589,
+      "sha256": "1e77e023174209ed27c16bf33b27b1ce04dee9d65a3bb349e0271b4dbcc753ef"
+    },
+    {
+      "path": "requirements-viewer.txt",
+      "bytes": 164,
+      "sha256": "e5c876e862085ccadf8cd8086bcaadec16870d0921118826cccd02c960f6f026"
+    },
+    {
+      "path": "robot/assets/robot/head_link.STL",
+      "bytes": 932784,
+      "sha256": "005fb67fbd3eff94aa8bf4a6e83238174e9f91b6721f7111594322f223724411"
+    },
+    {
+      "path": "robot/assets/robot/left_ankle_pitch_link.STL",
+      "bytes": 71184,
+      "sha256": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d"
+    },
+    {
+      "path": "robot/assets/robot/left_ankle_roll_link.STL",
+      "bytes": 653384,
+      "sha256": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f"
+    },
+    {
+      "path": "robot/assets/robot/left_elbow_link.STL",
+      "bytes": 88784,
+      "sha256": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3"
+    },
+    {
+      "path": "robot/assets/robot/left_hip_pitch_link.STL",
+      "bytes": 181684,
+      "sha256": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4"
+    },
+    {
+      "path": "robot/assets/robot/left_hip_roll_link.STL",
+      "bytes": 192184,
+      "sha256": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf"
+    },
+    {
+      "path": "robot/assets/robot/left_hip_yaw_link.STL",
+      "bytes": 296284,
+      "sha256": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b"
+    },
+    {
+      "path": "robot/assets/robot/left_knee_link.STL",
+      "bytes": 854884,
+      "sha256": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477"
+    },
+    {
+      "path": "robot/assets/robot/left_rubber_hand.STL",
+      "bytes": 2287484,
+      "sha256": "cff2221a690fa69303f61fce68f2d155c1517b52efb6ca9262dd56e0bc6e70fe"
+    },
+    {
+      "path": "robot/assets/robot/left_shoulder_pitch_link.STL",
+      "bytes": 176784,
+      "sha256": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52"
+    },
+    {
+      "path": "robot/assets/robot/left_shoulder_roll_link.STL",
+      "bytes": 400284,
+      "sha256": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88"
+    },
+    {
+      "path": "robot/assets/robot/left_shoulder_yaw_link.STL",
+      "bytes": 249184,
+      "sha256": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e"
+    },
+    {
+      "path": "robot/assets/robot/left_wrist_pitch_link.STL",
+      "bytes": 85984,
+      "sha256": "b251d8e05047f695d0f536cd78c11973cfa4e78d08cfe82759336cc3471de3a9"
+    },
+    {
+      "path": "robot/assets/robot/left_wrist_roll_link.STL",
+      "bytes": 356184,
+      "sha256": "edc387c9a0ba8c2237e9b296d32531426fabeb6f53e58df45c76106bca74148c"
+    },
+    {
+      "path": "robot/assets/robot/left_wrist_yaw_link.STL",
+      "bytes": 318684,
+      "sha256": "83f8fb3a726bf9613d65dd14f0f447cb918c3c95b3938042a0c9c09749267d3b"
+    },
+    {
+      "path": "robot/assets/robot/logo_link.STL",
+      "bytes": 243384,
+      "sha256": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b"
+    },
+    {
+      "path": "robot/assets/robot/pelvis.STL",
+      "bytes": 1060884,
+      "sha256": "5ba6bbc888e630550140d3c26763f10206da8c8bd30ed886b8ede41c61f57a31"
+    },
+    {
+      "path": "robot/assets/robot/pelvis_contour_link.STL",
+      "bytes": 1805184,
+      "sha256": "5cc5c2c7a312329e3feeb2b03d3fc09fc29705bd01864f6767e51be959662420"
+    },
+    {
+      "path": "robot/assets/robot/right_ankle_pitch_link.STL",
+      "bytes": 71184,
+      "sha256": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9"
+    },
+    {
+      "path": "robot/assets/robot/right_ankle_roll_link.STL",
+      "bytes": 653784,
+      "sha256": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5"
+    },
+    {
+      "path": "robot/assets/robot/right_elbow_link.STL",
+      "bytes": 88784,
+      "sha256": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab"
+    },
+    {
+      "path": "robot/assets/robot/right_hip_pitch_link.STL",
+      "bytes": 181284,
+      "sha256": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6"
+    },
+    {
+      "path": "robot/assets/robot/right_hip_roll_link.STL",
+      "bytes": 192684,
+      "sha256": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6"
+    },
+    {
+      "path": "robot/assets/robot/right_hip_yaw_link.STL",
+      "bytes": 296284,
+      "sha256": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668"
+    },
+    {
+      "path": "robot/assets/robot/right_knee_link.STL",
+      "bytes": 852284,
+      "sha256": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8"
+    },
+    {
+      "path": "robot/assets/robot/right_rubber_hand.STL",
+      "bytes": 2192684,
+      "sha256": "99533b778bca6246144fa511bb9d4e555e075c641f2a0251e04372869cd99d67"
+    },
+    {
+      "path": "robot/assets/robot/right_shoulder_pitch_link.STL",
+      "bytes": 176784,
+      "sha256": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02"
+    },
+    {
+      "path": "robot/assets/robot/right_shoulder_roll_link.STL",
+      "bytes": 401884,
+      "sha256": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81"
+    },
+    {
+      "path": "robot/assets/robot/right_shoulder_yaw_link.STL",
+      "bytes": 249984,
+      "sha256": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5"
+    },
+    {
+      "path": "robot/assets/robot/right_wrist_pitch_link.STL",
+      "bytes": 79584,
+      "sha256": "d22f8f3b3127f15a63e5be1ee273cd5075786c3142f1c3d9f76cbf43d2a26477"
+    },
+    {
+      "path": "robot/assets/robot/right_wrist_roll_link.STL",
+      "bytes": 356084,
+      "sha256": "a7ee9212ff5b94d6cb7f52bb1bbf3f352194d5b598acff74f4c77d340c5b344f"
+    },
+    {
+      "path": "robot/assets/robot/right_wrist_yaw_link.STL",
+      "bytes": 341484,
+      "sha256": "bc9dece2d12509707e0057ba2e48df8f3d56db0c79410212963a25e8a50f61a6"
+    },
+    {
+      "path": "robot/assets/robot/torso_link_rev_1_0.STL",
+      "bytes": 2570584,
+      "sha256": "11ddb46f2098efbbd8816b1d65893632d8e78be936376c7cdcd6771899ccc723"
+    },
+    {
+      "path": "robot/assets/robot/waist_roll_link_rev_1_0.STL",
+      "bytes": 85884,
+      "sha256": "b67c347a05abc3e8ddae600d98a082bee273bb39f8e651647708b0a7140a8a97"
+    },
+    {
+      "path": "robot/assets/robot/waist_yaw_link_rev_1_0.STL",
+      "bytes": 619984,
+      "sha256": "ec6db442b11f25eed898b5add07940c85d804f300de24dcbd264ccd8be7d554c"
+    },
+    {
+      "path": "robot/scene.xml",
+      "bytes": 34544,
+      "sha256": "eba282e76bdab67da9bd830817a8296226d984969859fbb5720a07b6826585ac"
+    },
+    {
+      "path": "robot_metadata.json",
+      "bytes": 5182,
+      "sha256": "099c6a9ea4cd506e794ca06d0764f953b52a6e54f729ec30fa2da08dd31bbb3b"
+    },
+    {
+      "path": "run.sh",
+      "bytes": 385,
+      "sha256": "36ad5c162718ec408be95957091ffd2908638ae366d003884f3fd0349260faaf"
+    },
+    {
+      "path": "setup.sh",
+      "bytes": 2298,
+      "sha256": "74b9416d12224c7f025f528657758faca4367a4100e783b2688099621efc61a8"
+    },
+    {
+      "path": "validation/dance1_subject1_full.json",
+      "bytes": 270,
+      "sha256": "08831cdde9f95df021e70fcdcc3a99b7ad94011aaf246ed51db98eece4b56ae3"
+    },
+    {
+      "path": "validation/fallAndGetUp2_subject2_full.json",
+      "bytes": 278,
+      "sha256": "caa5cb4084ef14fedd74d82d355c6f1873922cdb265ba047ad652888a7715e51"
+    },
+    {
+      "path": "validation/jumps1_subject2_full.json",
+      "bytes": 285,
+      "sha256": "6d97f3001ec1c101d18642dc80cc26136aba457eccf59d3394e1bdfb40dffe54"
+    },
+    {
+      "path": "validation/preview.png",
+      "bytes": 176140,
+      "sha256": "7e81358fba607ffe82f996bfb9eb7c1334b2ebd1d4a84807748b274e83fcc8f5"
+    },
+    {
+      "path": "validation/walk1_subject1_full.json",
+      "bytes": 283,
+      "sha256": "55e51222c81122cbc98cef8a469d83624dd73f35147358c526793aeef466e9f1"
+    },
+    {
+      "path": "validation/walk_10s.json",
+      "bytes": 268,
+      "sha256": "d5ea75f9b7d09e7cce619a39c9869e33eab0133f3f7161d43bb022386622429b"
+    }
+  ]
+}

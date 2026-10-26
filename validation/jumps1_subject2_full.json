@@ -1,0 +1,11 @@
+{
+  "clip": "jumps1_subject2.csv",
+  "policy_iteration": 18000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 12221,
+  "total_steps": 12221,
+  "simulated_seconds": 244.42000000000002,
+  "wall_seconds": 31.560290215536952,
+  "failed": false,
+  "completed_full_clip": true
+}
