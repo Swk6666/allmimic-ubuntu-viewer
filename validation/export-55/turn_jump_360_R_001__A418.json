@@ -1,0 +1,11 @@
+{
+  "clip": "turn_jump_360_R_001__A418.csv",
+  "policy_iteration": 36000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 245,
+  "total_steps": 245,
+  "simulated_seconds": 4.9,
+  "wall_seconds": 0.5502920653671026,
+  "failed": false,
+  "completed_full_clip": true
+}

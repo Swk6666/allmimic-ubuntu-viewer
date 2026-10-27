@@ -1,13 +1,13 @@
 {
   "format_version": 2,
-  "source_checkpoint": "runs/lafan1_target_100/ckpt_0018000.pt",
-  "policy_iteration": 18000,
+  "source_checkpoint": "runs/mixed55_phase1/ckpt_0036000.pt",
+  "policy_iteration": 36000,
   "upstream_commit": "cb334ff674b2f57248f33f8c21b7fb526fbdf8cc",
   "git_lfs_files": [
     "policy.pt",
     "motions.npz"
   ],
-  "note": "Hashes refer to complete working-tree files after Git LFS download, not LFS pointers. This manifest describes the GitHub repository contents; the original export archive is unchanged.",
+  "note": "Hashes refer to complete working-tree files after Git LFS download, not LFS pointers. The 36000-iteration policy and 55-motion library are integrated with the local GUI and runtime setup. Original 46 motion arrays are bit-identical. validation/export-55 contains current export-host results; validation/export-46 and validation/previous-40 preserve earlier results. Original export archives are unchanged.",
   "files": [
     {
       "path": ".gitattributes",
@@ -36,13 +36,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5142,
-      "sha256": "11d7a1710652031b751331071c0344e76b0b8a48f7df8dfdcd301bd3e3c07a0e"
+      "bytes": 8313,
+      "sha256": "66b10917d4687102a37e8174419c46c82e26c89005dc8c40d3f76ffef09fdebf"
     },
     {
       "path": "README.txt",
-      "bytes": 4871,
-      "sha256": "af9b52c6cdd208a6871d308acaa3aa52bebfc0414b90158804b5731bdf60e1d2"
+      "bytes": 7228,
+      "sha256": "a1ca35dc9707587a02989bcc4d231032baad8eb833f5dbb1700cb4fd9b9936ac"
     },
     {
       "path": "allmimic/__init__.py",
@@ -76,8 +76,8 @@
     },
     {
       "path": "docs/motion-selector.png",
-      "bytes": 107898,
-      "sha256": "793e23aee0320ee2eb9782fa63a71ed9ba4c5c365402aaf9018bfaf15ae0418b"
+      "bytes": 112166,
+      "sha256": "43a60a041b9c64a01292e9cdd4ca940a9ca1469070fe402657135a284036ea28"
     },
     {
       "path": "gui_runtime/LICENSE_PYTHON.txt",
@@ -96,13 +96,18 @@
     },
     {
       "path": "motion_gui.py",
-      "bytes": 14355,
-      "sha256": "84637577b57e5a4d7177241986c9b2cc2810563bf60e0a039e680fa38e48daa7"
+      "bytes": 14610,
+      "sha256": "461de2c9eeb80594a9d58962df6407fbf6dd5c923f250f842ce5ccfeda26f89b"
+    },
+    {
+      "path": "motion_sources.json",
+      "bytes": 1712,
+      "sha256": "83d2d761aa34d2ef571ed821830693d513567e736ef565a760684dd8e3ce987c"
     },
     {
       "path": "motions.npz",
-      "bytes": 125284680,
-      "sha256": "75da9adfcef46c25990240563ff5587016e995ad83f322cd772f5a256866c365"
+      "bytes": 126557896,
+      "sha256": "8470c2a98c6f251c9ad96045056a19c08749617c4a7668ff580466fbeadc0229"
     },
     {
       "path": "play.py",
@@ -111,8 +116,8 @@
     },
     {
       "path": "policy.pt",
-      "bytes": 36881589,
-      "sha256": "1e77e023174209ed27c16bf33b27b1ce04dee9d65a3bb349e0271b4dbcc753ef"
+      "bytes": 36882421,
+      "sha256": "608bdc3dd8f2c9be570dace43a966ee122c4f705b500af47595a472a7dbd8fb8"
     },
     {
       "path": "requirements-viewer.txt",
@@ -315,34 +320,177 @@
       "sha256": "74b9416d12224c7f025f528657758faca4367a4100e783b2688099621efc61a8"
     },
     {
-      "path": "validation/dance1_subject1_full.json",
+      "path": "training_validation.json",
+      "bytes": 15329,
+      "sha256": "949c2d4334205260d41242489cb271edcf5c5ed33f6f5ca05ce762cde4d981de"
+    },
+    {
+      "path": "validation/export-46/broad_jump_002__A359.json",
+      "bytes": 272,
+      "sha256": "21a45226307acffc35114eaebe797736802b76768e0f270babb23e71b9fa2fcf"
+    },
+    {
+      "path": "validation/export-46/flip_090_001__A304.json",
+      "bytes": 270,
+      "sha256": "3d18d2dacd7a37ceac47c50ff6eb121c3f37aa2529c94abc88cdd2e4062071ea"
+    },
+    {
+      "path": "validation/export-46/flip_180_R_001__A304.json",
+      "bytes": 272,
+      "sha256": "2409ffebb7025323ae3eb3e1859b594ebc41951eb0ee8ae6c3d2c735d32a78f4"
+    },
+    {
+      "path": "validation/export-46/flip_360_001__A304.json",
+      "bytes": 283,
+      "sha256": "c352fb30502fd9b8dd13d7713616c7f6d188c78bf04bcc4f8f7b1c3327ad8353"
+    },
+    {
+      "path": "validation/export-46/flip_360_hero_landing_001__A304.json",
+      "bytes": 296,
+      "sha256": "cfa1ba39f096f98b0b903ad9dffa500f7e1cd086ac2e265b7e8bce3fba4fb08a"
+    },
+    {
+      "path": "validation/export-46/side_roll_R_002__A304.json",
+      "bytes": 271,
+      "sha256": "2ecc89c812ad94010fd3944209014a94f6b9055b2331d6cdfabaf85f15244462"
+    },
+    {
+      "path": "validation/export-46/summary.json",
+      "bytes": 2422,
+      "sha256": "a72d8878c7cc91cbbb4b087d038eece8e3911298e2bc5e76e384a80a2c721645"
+    },
+    {
+      "path": "validation/export-46/walk1_subject1.json",
+      "bytes": 284,
+      "sha256": "794cd7cd94014aced2f0d9342f9e358d6ba8779db2a8e5ee28320ab32203a8eb"
+    },
+    {
+      "path": "validation/export-55/broad_jump_002__A359.json",
+      "bytes": 272,
+      "sha256": "510d9a724d6d466f565b8c9016eba41c317502c86bc872b2662869978d70ff78"
+    },
+    {
+      "path": "validation/export-55/cartwheel_R_001__A304.json",
+      "bytes": 273,
+      "sha256": "0b24a793755a0e08cc8553be44d349f127d3ce6e3f9c8005a779658029f1ada6"
+    },
+    {
+      "path": "validation/export-55/dance_hiphop_happy_feet_R_fast_001__A316.json",
+      "bytes": 292,
+      "sha256": "58f642fce6405eb776d2a4e1c91197c6f0707551ca8ab9fa127961b6e63e592a"
+    },
+    {
+      "path": "validation/export-55/flip_090_001__A304.json",
+      "bytes": 270,
+      "sha256": "8a755b8ce5740653506750d2a590c9ecdae9cd2919048bd00f37041db154b11b"
+    },
+    {
+      "path": "validation/export-55/flip_180_R_001__A304.json",
+      "bytes": 272,
+      "sha256": "0802b6da8758fcad20ed4403137f4fdcd47de5bcf8f6fdd2021f4284db98bba3"
+    },
+    {
+      "path": "validation/export-55/flip_360_001__A304.json",
+      "bytes": 283,
+      "sha256": "d2e46092ce5e2e5e1d447dbeef61f2beed6607b752f79ed8d667b2977608e433"
+    },
+    {
+      "path": "validation/export-55/flip_360_hero_landing_001__A304.json",
+      "bytes": 296,
+      "sha256": "172228cb690ae4fd8c9933ff9afade553a87123490efa9be26b1afc6ca114591"
+    },
+    {
+      "path": "validation/export-55/handstand_ff_loop_180_R_001__A304.json",
+      "bytes": 283,
+      "sha256": "b030d2f4a246c61842ed734cd5dacf73d6b100666a90c877116c83836621b4aa"
+    },
+    {
+      "path": "validation/export-55/handstand_idle_start_002__A304.json",
+      "bytes": 282,
+      "sha256": "b5fbcfaa2d3ec117d5bb5340da83629af1cc86bd21f4d5868b3f940026b00cbc"
+    },
+    {
+      "path": "validation/export-55/handstand_jump_004__A304.json",
+      "bytes": 276,
+      "sha256": "541bdd876e03e0b1f8cbabc4e3773d8e4489cc9242c82c7bd5b0c77b9d0716b8"
+    },
+    {
+      "path": "validation/export-55/lateral_hop_R_001__A359.json",
+      "bytes": 275,
+      "sha256": "2f3be3926ccb1ae61cf63569c6ed59c4280c45e1383b5a2e06f9ab3cc4f05cd4"
+    },
+    {
+      "path": "validation/export-55/shadow_boxing_R_001__A359.json",
+      "bytes": 274,
+      "sha256": "2491da6de350921c74b131bea93564e33c6fe2fd8aab2783b1d5311508bac902"
+    },
+    {
+      "path": "validation/export-55/side_roll_R_002__A304.json",
+      "bytes": 272,
+      "sha256": "913626e86fbe2162054afd8789637a7b4f2157ed527cf3678e50dff343be72f7"
+    },
+    {
+      "path": "validation/export-55/summary.json",
+      "bytes": 5389,
+      "sha256": "c91596323d21a48cf3baec68c005de82cee864789e91393441e6470f46aae20c"
+    },
+    {
+      "path": "validation/export-55/tiger_jump_to_shoulder_roll_R_001__A415.json",
+      "bytes": 305,
+      "sha256": "11c4d618e7fd738048499b5c5af43c1c7b3eadeb571aec0a5464aedab9af942f"
+    },
+    {
+      "path": "validation/export-55/turn_jump_360_R_001__A418.json",
+      "bytes": 276,
+      "sha256": "7115fabde853ce429de9048b438dd7297cf7d14142d0cd0a7278a2424e78a9d8"
+    },
+    {
+      "path": "validation/export-55/walk1_subject1.json",
+      "bytes": 284,
+      "sha256": "a03f04aed8224e942031dd880676fdbe06cddb8efe1d6af64934914bcb42e386"
+    },
+    {
+      "path": "validation/previous-40/dance1_subject1_full.json",
       "bytes": 270,
       "sha256": "08831cdde9f95df021e70fcdcc3a99b7ad94011aaf246ed51db98eece4b56ae3"
     },
     {
-      "path": "validation/fallAndGetUp2_subject2_full.json",
+      "path": "validation/previous-40/fallAndGetUp2_subject2_full.json",
       "bytes": 278,
       "sha256": "caa5cb4084ef14fedd74d82d355c6f1873922cdb265ba047ad652888a7715e51"
     },
     {
-      "path": "validation/jumps1_subject2_full.json",
+      "path": "validation/previous-40/jumps1_subject2_full.json",
       "bytes": 285,
       "sha256": "6d97f3001ec1c101d18642dc80cc26136aba457eccf59d3394e1bdfb40dffe54"
     },
     {
-      "path": "validation/preview.png",
+      "path": "validation/previous-40/preview.png",
       "bytes": 176140,
       "sha256": "7e81358fba607ffe82f996bfb9eb7c1334b2ebd1d4a84807748b274e83fcc8f5"
     },
     {
-      "path": "validation/walk1_subject1_full.json",
+      "path": "validation/previous-40/walk1_subject1_full.json",
       "bytes": 283,
       "sha256": "55e51222c81122cbc98cef8a469d83624dd73f35147358c526793aeef466e9f1"
     },
     {
-      "path": "validation/walk_10s.json",
+      "path": "validation/previous-40/walk_10s.json",
       "bytes": 268,
       "sha256": "d5ea75f9b7d09e7cce619a39c9869e33eab0133f3f7161d43bb022386622429b"
+    },
+    {
+      "path": "validation/ubuntu-55-summary.json",
+      "bytes": 8723,
+      "sha256": "56c6344b28e72d34e64ff03ad571d7c0fa2aa69d5901470b90edc45d811bfe48"
     }
-  ]
+  ],
+  "motion_count": 55,
+  "source_checkpoint_sha256": "ce56e5d933c751a721b98955e80cd9573487e521f456563dcced6ce4f438774f",
+  "source_export_archive": {
+    "name": "allmimic-ubuntu-viewer-55.tar.gz",
+    "bytes": 160746579,
+    "sha256": "b3e76ff226fb27353c4a16034ac9c6914f67f98b6819148121e69338f3e2d7b3"
+  },
+  "previous_policy_iteration": 30000
 }

@@ -1,0 +1,505 @@
+{
+  "source_iteration": 30000,
+  "final_iteration": 36000,
+  "additional_iterations": 6000,
+  "additional_policy_updates": 2400,
+  "additional_training_seconds": 682.3497879505157,
+  "baseline": {
+    "it": 30000,
+    "checkpoint": "runs/mixed46_phase1/ckpt_0030000.pt",
+    "evaluation_dir": "runs/mixed55_baseline_30k",
+    "testsets": {
+      "lafan1": {
+        "clips": 40,
+        "failed": 0,
+        "success_rate": 1.0,
+        "mean_ret_paper": 0.9264597684144974,
+        "mean_ret_clip01": 0.9264597684144974,
+        "frame_weighted_ret_paper": 0.9286227330668151,
+        "hours": 2.4506666666666668,
+        "eval_seconds": 86.4
+      },
+      "high_dynamic_six": {
+        "clips": 6,
+        "failed": 0,
+        "success_rate": 1.0,
+        "mean_ret_paper": 0.908456931511561,
+        "mean_ret_clip01": 0.908456931511561,
+        "frame_weighted_ret_paper": 0.9085125279216462,
+        "hours": 0.010750000000000001,
+        "eval_seconds": 4.0
+      },
+      "expansion_nine": {
+        "clips": 9,
+        "failed": 5,
+        "success_rate": 0.4444444444444444,
+        "mean_ret_paper": 0.47680803057220245,
+        "mean_ret_clip01": 0.47680803057220245,
+        "frame_weighted_ret_paper": 0.4857895216143261,
+        "hours": 0.01405,
+        "eval_seconds": 20.5
+      },
+      "lafan1_seg10": {
+        "clips": 896,
+        "failed": 0,
+        "success_rate": 1.0,
+        "mean_ret_paper": 0.9269032697193325,
+        "mean_ret_clip01": 0.9269032697193325,
+        "frame_weighted_ret_paper": 0.9266784073844065,
+        "hours": 2.4531388888888888,
+        "eval_seconds": 18.8
+      }
+    }
+  },
+  "selected": {
+    "it": 36000,
+    "updates": 14400,
+    "training_seconds": 4055.226457118988,
+    "checkpoint": "runs/mixed55_phase1/ckpt_0036000.pt",
+    "testsets": {
+      "lafan1": {
+        "clips": 40,
+        "failed": 0,
+        "success_rate": 1.0,
+        "mean_ret_paper": 0.9214487060904503,
+        "mean_ret_clip01": 0.9214487060904503,
+        "frame_weighted_ret_paper": 0.9233225973199504,
+        "hours": 2.4506666666666668,
+        "eval_seconds": 86.3
+      },
+      "high_dynamic_six": {
+        "clips": 6,
+        "failed": 0,
+        "success_rate": 1.0,
+        "mean_ret_paper": 0.9026056627432505,
+        "mean_ret_clip01": 0.9026056627432505,
+        "frame_weighted_ret_paper": 0.9021277814222902,
+        "hours": 0.010750000000000001,
+        "eval_seconds": 4.0
+      },
+      "expansion_nine": {
+        "clips": 9,
+        "failed": 0,
+        "success_rate": 1.0,
+        "mean_ret_paper": 0.789779845211241,
+        "mean_ret_clip01": 0.789779845211241,
+        "frame_weighted_ret_paper": 0.7912693217869788,
+        "hours": 0.01405,
+        "eval_seconds": 4.3
+      },
+      "lafan1_seg10": {
+        "clips": 896,
+        "failed": 1,
+        "success_rate": 0.9988839285714286,
+        "mean_ret_paper": 0.9217470472296034,
+        "mean_ret_clip01": 0.9217470472296034,
+        "frame_weighted_ret_paper": 0.9215926412037326,
+        "hours": 2.4531388888888888,
+        "eval_seconds": 18.3
+      }
+    },
+    "evaluation_dir": "runs/mixed55_phase1/evaluations/it_0036000",
+    "confirmation": {
+      "testsets": {
+        "lafan1": {
+          "clips": 40,
+          "failed": 0,
+          "success_rate": 1.0,
+          "mean_ret_paper": 0.9218036130070686,
+          "mean_ret_clip01": 0.9218036130070686,
+          "frame_weighted_ret_paper": 0.9235452185483487,
+          "hours": 2.4506666666666668,
+          "eval_seconds": 86.4
+        },
+        "high_dynamic_six": {
+          "clips": 6,
+          "failed": 0,
+          "success_rate": 1.0,
+          "mean_ret_paper": 0.9024457732836405,
+          "mean_ret_clip01": 0.9024457732836405,
+          "frame_weighted_ret_paper": 0.90198041071479,
+          "hours": 0.010750000000000001,
+          "eval_seconds": 4.0
+        },
+        "expansion_nine": {
+          "clips": 9,
+          "failed": 0,
+          "success_rate": 1.0,
+          "mean_ret_paper": 0.7898455659548441,
+          "mean_ret_clip01": 0.7898455659548441,
+          "frame_weighted_ret_paper": 0.7910082227890454,
+          "hours": 0.01405,
+          "eval_seconds": 4.2
+        },
+        "lafan1_seg10": {
+          "clips": 896,
+          "failed": 1,
+          "success_rate": 0.9988839285714286,
+          "mean_ret_paper": 0.9216669389362713,
+          "mean_ret_clip01": 0.9216669389362713,
+          "frame_weighted_ret_paper": 0.9215011032827013,
+          "hours": 2.4531388888888888,
+          "eval_seconds": 18.3
+        }
+      },
+      "evaluation_dir": "runs/mixed55_phase1/evaluations/it_0036000_confirmation"
+    },
+    "confirmation_all_full_clips_pass": true
+  },
+  "all_55_full_clips_pass_twice": true,
+  "new_clip_details": [
+    {
+      "name": "cartwheel_R_001__A304.csv",
+      "frames": 235,
+      "steps": 234,
+      "failed": false,
+      "ret_paper": 0.8813075423240662,
+      "ret_sum": 20.622596490383152
+    },
+    {
+      "name": "tiger_jump_to_shoulder_roll_R_001__A415.csv",
+      "frames": 279,
+      "steps": 278,
+      "failed": false,
+      "ret_paper": 0.7895491123199463,
+      "ret_sum": 21.949465322494508
+    },
+    {
+      "name": "turn_jump_360_R_001__A418.csv",
+      "frames": 246,
+      "steps": 245,
+      "failed": false,
+      "ret_paper": 0.9492844343185425,
+      "ret_sum": 23.25746864080429
+    },
+    {
+      "name": "lateral_hop_R_001__A359.csv",
+      "frames": 263,
+      "steps": 262,
+      "failed": false,
+      "ret_paper": 0.9078876376152039,
+      "ret_sum": 23.786656105518343
+    },
+    {
+      "name": "shadow_boxing_R_001__A359.csv",
+      "frames": 441,
+      "steps": 440,
+      "failed": false,
+      "ret_paper": 0.9190987944602966,
+      "ret_sum": 40.44034695625306
+    },
+    {
+      "name": "dance_hiphop_happy_feet_R_fast_001__A316.csv",
+      "frames": 184,
+      "steps": 183,
+      "failed": false,
+      "ret_paper": 0.8853254318237305,
+      "ret_sum": 16.20145540237427
+    },
+    {
+      "name": "handstand_idle_start_002__A304.csv",
+      "frames": 365,
+      "steps": 364,
+      "failed": false,
+      "ret_paper": 0.7272984385490417,
+      "ret_sum": 26.47366316318512
+    },
+    {
+      "name": "handstand_ff_loop_180_R_001__A304.csv",
+      "frames": 291,
+      "steps": 290,
+      "failed": false,
+      "ret_paper": 0.4828835427761078,
+      "ret_sum": 14.003622740507126
+    },
+    {
+      "name": "handstand_jump_004__A304.csv",
+      "frames": 225,
+      "steps": 224,
+      "failed": false,
+      "ret_paper": 0.5653836727142334,
+      "ret_sum": 12.664594268798828
+    }
+  ],
+  "prior_six_clip_details": [
+    {
+      "name": "broad_jump_002__A359.csv",
+      "frames": 263,
+      "steps": 262,
+      "failed": false,
+      "ret_paper": 0.9223600625991821,
+      "ret_sum": 24.165833640098572
+    },
+    {
+      "name": "side_roll_R_002__A304.csv",
+      "frames": 246,
+      "steps": 245,
+      "failed": false,
+      "ret_paper": 0.9014258980751038,
+      "ret_sum": 22.084934502840046
+    },
+    {
+      "name": "flip_090_001__A304.csv",
+      "frames": 360,
+      "steps": 359,
+      "failed": false,
+      "ret_paper": 0.8975832462310791,
+      "ret_sum": 32.22323853969574
+    },
+    {
+      "name": "flip_180_R_001__A304.csv",
+      "frames": 280,
+      "steps": 279,
+      "failed": false,
+      "ret_paper": 0.8860352635383606,
+      "ret_sum": 24.72038385272026
+    },
+    {
+      "name": "flip_360_001__A304.csv",
+      "frames": 358,
+      "steps": 357,
+      "failed": false,
+      "ret_paper": 0.91219162940979,
+      "ret_sum": 32.56524116992951
+    },
+    {
+      "name": "flip_360_hero_landing_001__A304.csv",
+      "frames": 428,
+      "steps": 427,
+      "failed": false,
+      "ret_paper": 0.8960378766059875,
+      "ret_sum": 38.26081733107567
+    }
+  ],
+  "sampler": [
+    {
+      "group": "lafan1",
+      "bins": 8842,
+      "probability": 0.3499999940395355,
+      "target": 0.35
+    },
+    {
+      "group": "high_dynamic_six",
+      "bins": 42,
+      "probability": 0.15000002086162567,
+      "target": 0.15
+    },
+    {
+      "group": "expansion_nine",
+      "bins": 54,
+      "probability": 0.5,
+      "target": 0.5
+    }
+  ],
+  "checkpoint_configuration_changes": [
+    "iterations",
+    "motions",
+    "out",
+    "resume"
+  ],
+  "all_model_optimizer_and_logged_values_finite": true,
+  "dataset_checksums_verified": true,
+  "evaluations": [
+    {
+      "it": 32000,
+      "updates": 12800,
+      "training_seconds": 3606.2198758125305,
+      "checkpoint": "runs/mixed55_phase1/ckpt_0032000.pt",
+      "testsets": {
+        "lafan1": {
+          "clips": 40,
+          "failed": 0,
+          "success_rate": 1.0,
+          "mean_ret_paper": 0.9218852788209915,
+          "mean_ret_clip01": 0.9218852788209915,
+          "frame_weighted_ret_paper": 0.9238158689051864,
+          "hours": 2.4506666666666668,
+          "eval_seconds": 86.9
+        },
+        "high_dynamic_six": {
+          "clips": 6,
+          "failed": 0,
+          "success_rate": 1.0,
+          "mean_ret_paper": 0.908335675795873,
+          "mean_ret_clip01": 0.908335675795873,
+          "frame_weighted_ret_paper": 0.908044574667346,
+          "hours": 0.010750000000000001,
+          "eval_seconds": 4.0
+        },
+        "expansion_nine": {
+          "clips": 9,
+          "failed": 3,
+          "success_rate": 0.6666666666666666,
+          "mean_ret_paper": 0.6637181751430035,
+          "mean_ret_clip01": 0.6637181751430035,
+          "frame_weighted_ret_paper": 0.6617522965318391,
+          "hours": 0.01405,
+          "eval_seconds": 4.5
+        },
+        "lafan1_seg10": {
+          "clips": 896,
+          "failed": 0,
+          "success_rate": 1.0,
+          "mean_ret_paper": 0.9233746364978808,
+          "mean_ret_clip01": 0.9233746364978808,
+          "frame_weighted_ret_paper": 0.923115005355881,
+          "hours": 2.4531388888888888,
+          "eval_seconds": 18.2
+        }
+      },
+      "evaluation_dir": "runs/mixed55_phase1/evaluations/it_0032000"
+    },
+    {
+      "it": 34000,
+      "updates": 13600,
+      "training_seconds": 3831.2762157917023,
+      "checkpoint": "runs/mixed55_phase1/ckpt_0034000.pt",
+      "testsets": {
+        "lafan1": {
+          "clips": 40,
+          "failed": 2,
+          "success_rate": 0.95,
+          "mean_ret_paper": 0.8971746833994985,
+          "mean_ret_clip01": 0.8971746833994985,
+          "frame_weighted_ret_paper": 0.8962044561917938,
+          "hours": 2.4506666666666668,
+          "eval_seconds": 87.2
+        },
+        "high_dynamic_six": {
+          "clips": 6,
+          "failed": 0,
+          "success_rate": 1.0,
+          "mean_ret_paper": 0.912316749493281,
+          "mean_ret_clip01": 0.912316749493281,
+          "frame_weighted_ret_paper": 0.9122458342877988,
+          "hours": 0.010750000000000001,
+          "eval_seconds": 4.0
+        },
+        "expansion_nine": {
+          "clips": 9,
+          "failed": 3,
+          "success_rate": 0.6666666666666666,
+          "mean_ret_paper": 0.6964689633912511,
+          "mean_ret_clip01": 0.6964689633912511,
+          "frame_weighted_ret_paper": 0.7004840524364557,
+          "hours": 0.01405,
+          "eval_seconds": 4.4
+        },
+        "lafan1_seg10": {
+          "clips": 896,
+          "failed": 2,
+          "success_rate": 0.9977678571428571,
+          "mean_ret_paper": 0.9252629404488418,
+          "mean_ret_clip01": 0.9252629404488418,
+          "frame_weighted_ret_paper": 0.9249851342566002,
+          "hours": 2.4531388888888888,
+          "eval_seconds": 18.4
+        }
+      },
+      "evaluation_dir": "runs/mixed55_phase1/evaluations/it_0034000"
+    },
+    {
+      "it": 36000,
+      "updates": 14400,
+      "training_seconds": 4055.226457118988,
+      "checkpoint": "runs/mixed55_phase1/ckpt_0036000.pt",
+      "testsets": {
+        "lafan1": {
+          "clips": 40,
+          "failed": 0,
+          "success_rate": 1.0,
+          "mean_ret_paper": 0.9214487060904503,
+          "mean_ret_clip01": 0.9214487060904503,
+          "frame_weighted_ret_paper": 0.9233225973199504,
+          "hours": 2.4506666666666668,
+          "eval_seconds": 86.3
+        },
+        "high_dynamic_six": {
+          "clips": 6,
+          "failed": 0,
+          "success_rate": 1.0,
+          "mean_ret_paper": 0.9026056627432505,
+          "mean_ret_clip01": 0.9026056627432505,
+          "frame_weighted_ret_paper": 0.9021277814222902,
+          "hours": 0.010750000000000001,
+          "eval_seconds": 4.0
+        },
+        "expansion_nine": {
+          "clips": 9,
+          "failed": 0,
+          "success_rate": 1.0,
+          "mean_ret_paper": 0.789779845211241,
+          "mean_ret_clip01": 0.789779845211241,
+          "frame_weighted_ret_paper": 0.7912693217869788,
+          "hours": 0.01405,
+          "eval_seconds": 4.3
+        },
+        "lafan1_seg10": {
+          "clips": 896,
+          "failed": 1,
+          "success_rate": 0.9988839285714286,
+          "mean_ret_paper": 0.9217470472296034,
+          "mean_ret_clip01": 0.9217470472296034,
+          "frame_weighted_ret_paper": 0.9215926412037326,
+          "hours": 2.4531388888888888,
+          "eval_seconds": 18.3
+        }
+      },
+      "evaluation_dir": "runs/mixed55_phase1/evaluations/it_0036000",
+      "confirmation": {
+        "testsets": {
+          "lafan1": {
+            "clips": 40,
+            "failed": 0,
+            "success_rate": 1.0,
+            "mean_ret_paper": 0.9218036130070686,
+            "mean_ret_clip01": 0.9218036130070686,
+            "frame_weighted_ret_paper": 0.9235452185483487,
+            "hours": 2.4506666666666668,
+            "eval_seconds": 86.4
+          },
+          "high_dynamic_six": {
+            "clips": 6,
+            "failed": 0,
+            "success_rate": 1.0,
+            "mean_ret_paper": 0.9024457732836405,
+            "mean_ret_clip01": 0.9024457732836405,
+            "frame_weighted_ret_paper": 0.90198041071479,
+            "hours": 0.010750000000000001,
+            "eval_seconds": 4.0
+          },
+          "expansion_nine": {
+            "clips": 9,
+            "failed": 0,
+            "success_rate": 1.0,
+            "mean_ret_paper": 0.7898455659548441,
+            "mean_ret_clip01": 0.7898455659548441,
+            "frame_weighted_ret_paper": 0.7910082227890454,
+            "hours": 0.01405,
+            "eval_seconds": 4.2
+          },
+          "lafan1_seg10": {
+            "clips": 896,
+            "failed": 1,
+            "success_rate": 0.9988839285714286,
+            "mean_ret_paper": 0.9216669389362713,
+            "mean_ret_clip01": 0.9216669389362713,
+            "frame_weighted_ret_paper": 0.9215011032827013,
+            "hours": 2.4531388888888888,
+            "eval_seconds": 18.3
+          }
+        },
+        "evaluation_dir": "runs/mixed55_phase1/evaluations/it_0036000_confirmation"
+      },
+      "confirmation_all_full_clips_pass": true
+    }
+  ],
+  "notes": [
+    "Independent FP32 policy evaluation on GPU MuJoCo Warp.",
+    "Results concern the 55 training references, not unseen-motion generalization.",
+    "Full-clip success means no original termination condition before the last frame.",
+    "The 896 old segments are monitored separately.",
+    "Handstand loop evaluation starts from its reference pose, possibly inverted.",
+    "Native CPU MuJoCo playback is validated separately."
+  ]
+}

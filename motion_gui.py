@@ -22,6 +22,9 @@ from tkinter import font, ttk
 
 
 CATEGORIES = (
+    ('handstand', '倒立'), ('cartwheel', '侧手翻'), ('tiger_jump', '虎跃滚翻'),
+    ('turn_jump', '转身跳'), ('lateral_hop', '侧向跳'), ('shadow_boxing', '拳击'),
+    ('broad_jump', '远跳'), ('side_roll', '侧滚'), ('flip', '空翻'),
     ('fightAndSports', '运动 / 格斗'), ('fallAndGetUp', '跌倒起身'),
     ('dance', '舞蹈'), ('fight', '打斗'), ('jumps', '跳跃'),
     ('sprint', '冲刺'), ('walk', '步行'), ('run', '跑步'),

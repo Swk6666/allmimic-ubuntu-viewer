@@ -1,0 +1,11 @@
+{
+  "clip": "dance_hiphop_happy_feet_R_fast_001__A316.csv",
+  "policy_iteration": 36000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 183,
+  "total_steps": 183,
+  "simulated_seconds": 3.66,
+  "wall_seconds": 0.4096900960430503,
+  "failed": false,
+  "completed_full_clip": true
+}

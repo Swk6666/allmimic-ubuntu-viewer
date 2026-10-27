@@ -1,0 +1,11 @@
+{
+  "clip": "side_roll_R_002__A304.csv",
+  "policy_iteration": 36000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 245,
+  "total_steps": 245,
+  "simulated_seconds": 4.9,
+  "wall_seconds": 0.5682467883452773,
+  "failed": false,
+  "completed_full_clip": true
+}

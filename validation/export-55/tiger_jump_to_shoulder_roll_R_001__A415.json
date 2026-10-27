@@ -1,0 +1,11 @@
+{
+  "clip": "tiger_jump_to_shoulder_roll_R_001__A415.csv",
+  "policy_iteration": 36000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 278,
+  "total_steps": 278,
+  "simulated_seconds": 5.5600000000000005,
+  "wall_seconds": 0.6255376124754548,
+  "failed": false,
+  "completed_full_clip": true
+}

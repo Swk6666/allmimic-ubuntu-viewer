@@ -1,0 +1,11 @@
+{
+  "clip": "handstand_idle_start_002__A304.csv",
+  "policy_iteration": 36000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 364,
+  "total_steps": 364,
+  "simulated_seconds": 7.28,
+  "wall_seconds": 0.8543345825746655,
+  "failed": false,
+  "completed_full_clip": true
+}

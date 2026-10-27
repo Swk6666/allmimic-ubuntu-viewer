@@ -1,0 +1,11 @@
+{
+  "clip": "lateral_hop_R_001__A359.csv",
+  "policy_iteration": 36000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 262,
+  "total_steps": 262,
+  "simulated_seconds": 5.24,
+  "wall_seconds": 0.5911255581304431,
+  "failed": false,
+  "completed_full_clip": true
+}

@@ -1,0 +1,11 @@
+{
+  "clip": "flip_360_001__A304.csv",
+  "policy_iteration": 36000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 357,
+  "total_steps": 357,
+  "simulated_seconds": 7.140000000000001,
+  "wall_seconds": 0.7763885147869587,
+  "failed": false,
+  "completed_full_clip": true
+}

@@ -1,0 +1,11 @@
+{
+  "clip": "shadow_boxing_R_001__A359.csv",
+  "policy_iteration": 36000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 440,
+  "total_steps": 440,
+  "simulated_seconds": 8.8,
+  "wall_seconds": 1.02589510101825,
+  "failed": false,
+  "completed_full_clip": true
+}

@@ -1,0 +1,11 @@
+{
+  "clip": "flip_360_hero_landing_001__A304.csv",
+  "policy_iteration": 30000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 427,
+  "total_steps": 427,
+  "simulated_seconds": 8.540000000000001,
+  "wall_seconds": 0.8331837793812156,
+  "failed": false,
+  "completed_full_clip": true
+}

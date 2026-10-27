@@ -1,0 +1,186 @@
+{
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "new_passed": 9,
+  "new_total": 9,
+  "prior_six_passed": 6,
+  "walk1_passed": true,
+  "clips": [
+    {
+      "clip": "cartwheel_R_001__A304.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 234,
+      "total_steps": 234,
+      "simulated_seconds": 4.68,
+      "wall_seconds": 0.5498009938746691,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "tiger_jump_to_shoulder_roll_R_001__A415.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 278,
+      "total_steps": 278,
+      "simulated_seconds": 5.5600000000000005,
+      "wall_seconds": 0.6255376124754548,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "turn_jump_360_R_001__A418.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 245,
+      "total_steps": 245,
+      "simulated_seconds": 4.9,
+      "wall_seconds": 0.5502920653671026,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "lateral_hop_R_001__A359.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 262,
+      "total_steps": 262,
+      "simulated_seconds": 5.24,
+      "wall_seconds": 0.5911255581304431,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "shadow_boxing_R_001__A359.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 440,
+      "total_steps": 440,
+      "simulated_seconds": 8.8,
+      "wall_seconds": 1.02589510101825,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "dance_hiphop_happy_feet_R_fast_001__A316.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 183,
+      "total_steps": 183,
+      "simulated_seconds": 3.66,
+      "wall_seconds": 0.4096900960430503,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "handstand_idle_start_002__A304.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 364,
+      "total_steps": 364,
+      "simulated_seconds": 7.28,
+      "wall_seconds": 0.8543345825746655,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "handstand_ff_loop_180_R_001__A304.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 290,
+      "total_steps": 290,
+      "simulated_seconds": 5.8,
+      "wall_seconds": 0.641468508169055,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "handstand_jump_004__A304.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 224,
+      "total_steps": 224,
+      "simulated_seconds": 4.48,
+      "wall_seconds": 0.4857095191255212,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "broad_jump_002__A359.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 262,
+      "total_steps": 262,
+      "simulated_seconds": 5.24,
+      "wall_seconds": 0.6015549246221781,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "side_roll_R_002__A304.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 245,
+      "total_steps": 245,
+      "simulated_seconds": 4.9,
+      "wall_seconds": 0.5682467883452773,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "flip_090_001__A304.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 359,
+      "total_steps": 359,
+      "simulated_seconds": 7.18,
+      "wall_seconds": 0.8254041811451316,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "flip_180_R_001__A304.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 279,
+      "total_steps": 279,
+      "simulated_seconds": 5.58,
+      "wall_seconds": 0.6189068863168359,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "flip_360_001__A304.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 357,
+      "total_steps": 357,
+      "simulated_seconds": 7.140000000000001,
+      "wall_seconds": 0.7763885147869587,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "flip_360_hero_landing_001__A304.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 427,
+      "total_steps": 427,
+      "simulated_seconds": 8.540000000000001,
+      "wall_seconds": 0.9568869266659021,
+      "failed": false,
+      "completed_full_clip": true
+    },
+    {
+      "clip": "walk1_subject1.csv",
+      "policy_iteration": 36000,
+      "backend": "native MuJoCo CPU, FP32 policy",
+      "steps": 13064,
+      "total_steps": 13064,
+      "simulated_seconds": 261.28000000000003,
+      "wall_seconds": 28.430496896617115,
+      "failed": false,
+      "completed_full_clip": true
+    }
+  ],
+  "desktop_gui_tested": false
+}

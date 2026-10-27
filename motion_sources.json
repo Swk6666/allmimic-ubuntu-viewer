@@ -1,0 +1,72 @@
+{
+  "old_clips": 46,
+  "new_clips": 9,
+  "total_clips": 55,
+  "old_frames": 443055,
+  "new_frames": 2529,
+  "fps": 50,
+  "original_46_arrays_bit_identical": true,
+  "new_clips_details": [
+    {
+      "name": "cartwheel_R_001__A304.csv",
+      "frames": 235,
+      "seconds": 4.68
+    },
+    {
+      "name": "tiger_jump_to_shoulder_roll_R_001__A415.csv",
+      "frames": 279,
+      "seconds": 5.56
+    },
+    {
+      "name": "turn_jump_360_R_001__A418.csv",
+      "frames": 246,
+      "seconds": 4.9
+    },
+    {
+      "name": "lateral_hop_R_001__A359.csv",
+      "frames": 263,
+      "seconds": 5.24
+    },
+    {
+      "name": "shadow_boxing_R_001__A359.csv",
+      "frames": 441,
+      "seconds": 8.8
+    },
+    {
+      "name": "dance_hiphop_happy_feet_R_fast_001__A316.csv",
+      "frames": 184,
+      "seconds": 3.66
+    },
+    {
+      "name": "handstand_idle_start_002__A304.csv",
+      "frames": 365,
+      "seconds": 7.28
+    },
+    {
+      "name": "handstand_ff_loop_180_R_001__A304.csv",
+      "frames": 291,
+      "seconds": 5.8
+    },
+    {
+      "name": "handstand_jump_004__A304.csv",
+      "frames": 225,
+      "seconds": 4.48
+    }
+  ],
+  "old_bin_count": 8884,
+  "new_bin_count": 54,
+  "files": {
+    "data/processed/lafan1_plus_high_dynamic_46_50hz.npz": {
+      "bytes": 125836276,
+      "sha256": "72884755648ab4e4ca21f06085a82c824d2b11db7a9eaa529814b1d22deba55b"
+    },
+    "data/processed/expansion_nine_50hz.npz": {
+      "bytes": 721444,
+      "sha256": "74fd543e7e829ec3ea1d893e26162ed5069cb020529057375c55725153e086a4"
+    },
+    "data/processed/mixed55_50hz.npz": {
+      "bytes": 126557896,
+      "sha256": "8470c2a98c6f251c9ad96045056a19c08749617c4a7668ff580466fbeadc0229"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "clip": "handstand_jump_004__A304.csv",
+  "policy_iteration": 36000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 224,
+  "total_steps": 224,
+  "simulated_seconds": 4.48,
+  "wall_seconds": 0.4857095191255212,
+  "failed": false,
+  "completed_full_clip": true
+}

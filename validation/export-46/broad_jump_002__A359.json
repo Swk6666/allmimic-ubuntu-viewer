@@ -1,0 +1,11 @@
+{
+  "clip": "broad_jump_002__A359.csv",
+  "policy_iteration": 30000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 262,
+  "total_steps": 262,
+  "simulated_seconds": 5.24,
+  "wall_seconds": 0.4930372638627887,
+  "failed": false,
+  "completed_full_clip": true
+}

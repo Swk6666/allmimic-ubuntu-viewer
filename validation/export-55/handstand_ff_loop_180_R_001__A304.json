@@ -1,0 +1,11 @@
+{
+  "clip": "handstand_ff_loop_180_R_001__A304.csv",
+  "policy_iteration": 36000,
+  "backend": "native MuJoCo CPU, FP32 policy",
+  "steps": 290,
+  "total_steps": 290,
+  "simulated_seconds": 5.8,
+  "wall_seconds": 0.641468508169055,
+  "failed": false,
+  "completed_full_clip": true
+}
